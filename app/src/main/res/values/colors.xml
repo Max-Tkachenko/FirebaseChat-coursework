@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7b00</color>
+    <color name="colorBar">#000000</color>
+    <color name="colorBlue">#150b83</color>
+    <color name="colorButtonSend">#4c84e6</color>
+    <color name="friendChatText">#314bc1</color>
+    <color name="backgroungHello">#ab0059e9</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorKislota">#00ff19</color>
+    <color name="colorForNote">#ffe23e</color>
+</resources>

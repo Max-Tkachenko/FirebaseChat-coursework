@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="70dp"
+            android:theme="?attr/actionBarTheme" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/toolbar8"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorButtonSend"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="70dp"
+            android:theme="?attr/actionBarTheme"
+            />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_below="@+id/toolbar9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/toolbar8" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSend"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnSend"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorWhite"
+            app:fabSize="normal"
+            android:onClick="openGoogleSearch"
+            app:srcCompat="@drawable/logo_googleg_color_18dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/search"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toStartOf="@+id/search"
+            android:clickable="true"
+            android:onClick="openCamera"
+            app:backgroundTint="@color/colorWhite"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/camera" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/backToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/floatingActionButton17"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:onClick="backToMenuActivity"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            app:srcCompat="?android:attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" МЕНЮ"
+            android:textColor="@color/colorWhite"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_alignTop="@+id/backToMenu"
+            android:layout_toRightOf="@+id/backToMenu"
+            android:layout_toEndOf="@+id/backToMenu" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_alignLeft="@+id/backToMenu"
+            android:layout_alignStart="@+id/backToMenu"
+            android:layout_alignTop="@+id/btnSend"
+            android:layout_alignBottom="@+id/btnSend"
+            android:layout_alignRight="@+id/floatingActionButton17"
+            android:layout_alignEnd="@+id/floatingActionButton17"
+            android:id="@+id/relativeLayout2">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/relativeLayout2"
+            android:layout_alignEnd="@+id/relativeLayout2"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_alignRight="@+id/relativeLayout2"
+            android:layout_alignStart="@+id/relativeLayout2"
+            android:layout_alignTop="@+id/relativeLayout2"
+            android:ems="10"
+            android:hint="Введіть текст..."
+            android:inputType="textMultiLine"
+            android:textSize="21sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/floatingActionButton17"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:onClick="openPhone"
+            android:layout_toLeftOf="@+id/floatingActionButton17"
+            android:layout_toStartOf="@+id/floatingActionButton17"
+            android:clickable="true"
+            app:backgroundTint="@android:color/holo_green_dark"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+    </RelativeLayout>
+</LinearLayout>

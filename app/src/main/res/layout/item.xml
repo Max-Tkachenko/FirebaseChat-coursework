@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/singleMessageContainer">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bubble_a"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/tvMessage"
+        android:layout_toRightOf="@+id/tvMessage"
+        android:layout_toEndOf="@+id/tvMessage" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/tvTime"
+        android:layout_toRightOf="@+id/tvMessage"
+        android:layout_toEndOf="@+id/tvMessage" />
+
+</RelativeLayout>
