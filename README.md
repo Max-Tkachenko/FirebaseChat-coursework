@@ -1,9 +1,4 @@
 # FirebaseChat-coursework
-EN:
-(Simple Android Application)
-
-You can save/delete/edit references and open them quickly in browser or in this application. The program saves all the data in the device memory and can adapt to different screen sizes.
-________________________________________________________________________
 RU:
 (Простое Android приложение)
 
